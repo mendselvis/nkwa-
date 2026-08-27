@@ -18,7 +18,7 @@ export async function classifyTriage(
   symptoms: string,
   vitals: Vitals
 ): Promise<TriageResult> {
-  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
   const prompt = `You are a clinical triage assistant. Given the patient's symptoms and vitals, classify urgency and suggest next steps.
 
